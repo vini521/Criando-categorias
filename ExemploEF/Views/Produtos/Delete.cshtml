@@ -1,0 +1,39 @@
+﻿@model ExemploEF.Models.Produto
+
+@{
+    ViewData["Title"] = "Deletar Produto";
+}
+
+<div class="container mt-5">
+    <!-- Adicionado um card para melhor organização visual -->
+    <div class="card shadow-lg">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0">Tem certeza que deseja deletar este produto?</h3>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <!-- Aplicado negrito aos rótulos para melhor legibilidade -->
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Nome)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nome)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Estoque)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Estoque)</dd>
+
+                <dt class="col-sm-3 fw-bold">@Html.DisplayNameFor(model => model.Categoria)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Categoria.Nome)</dd>
+            </dl>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <!-- Estilização dos botões para alinhamento com o Bootstrap -->
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="ProdutoId" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="bi bi-trash"></i> Deletar
+                </button>
+            </form>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Voltar
+            </a>
+        </div>
+    </div>
+</div>

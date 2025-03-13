@@ -258,3 +258,4 @@ C:\Users\3EM\Desktop\Back End\EF\ExemploEF\ExemploEF\bin\Debug\net8.0\runtimes\w
 C:\Users\3EM\Desktop\Back End\EF\ExemploEF\ExemploEF\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\3EM\Desktop\Back End\EF\ExemploEF\ExemploEF\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\3EM\Desktop\Back End\EF\ExemploEF\ExemploEF\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\3EM\Desktop\Back End\EF\ExemploEF\ExemploEF\obj\Debug\net8.0\ExemploEF.sourcelink.json
